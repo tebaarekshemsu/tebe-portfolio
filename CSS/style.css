@@ -3,7 +3,6 @@ body {
 }
 
 ul {
-  /* margin-left: 50%; */
   list-style: none;
   height: 50vh;
   display: flex;
@@ -59,8 +58,6 @@ li:hover {
 }
 
 p {
-  /* color: white; */
-  /* font-style: italic; */
   font-size: large;
 }
 .sides {
