@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>my profile</title>
+  <link rel="stylesheet" href="./CSS/style.css">
+  <style>
+
+  </style>
+</head>
+
+<body>
+  <div class="HomePage" id="HomePage">
+    <div class="menu">
+      <a href="#HomePage"><button>Home</button></a>
+      <a href="#About"><button>About</button></a>
+      <a href="#Skills"><button>Skills</button></a>
+      <a href="#Project"><button>Projects</button></a>
+      <a href="#Contact"><button>Contact</button></a>
+      <a href="./Resources/Tebarek Shemsu CV.pdf" download=""><button>Resume</button></a>
+    </div>
+
+    <div class="menubar menuIcon">
+      <button></button><button></button><button></button>
+    </div>
+    <div class="SideBar">
+      <button class="closeBtn"> <img src="./icons/close.png" alt="" class="closeIcon"></button>
+      <ul>
+        <a href="#HomePage">
+          <li class="links">Home</li>
+        </a>
+        <a href="#About">
+          <li class="links">About</li>
+        </a>
+        <a href="#Skills">
+          <li class="links">Skills</li>
+        </a>
+        <a href="#Project">
+          <li class="links">Project</li>
+        </a>
+        <a href="#Contact">
+          <li class="links">Contact</li>
+        </a>
+        <a href="./Tebarek Shemsu CV.pdf" download="">
+          <li class="links">Resume</li>
+        </a>
+      </ul>
+
+    </div>
+    <div style="display: grid; width: 100%; height: 100vh; grid-template-columns: 30% 70%;">
+      <div>
+        <div class="left">
+          <div class="name TBEN">
+            <p>Tebarek</p>
+            <p>Shemsu</p>
+          </div>
+          <div class="photoHolder">
+            <img src="./Resources/images/MyPhoto/photo_2023-12-15_22-44-04.jpg" alt="My Photo" class="photo">
+          </div>
+
+        </div>
+      </div>
+      <div>
+        <div class="right">
+          <h2>Software Engineer</h2>
+          <h3>FullStack Developer</h3>
+          <p>Software Engineering student at
+          </p>
+          <p>Addis Ababa Science
+            and Technology University</p>
+            <a href="#About"><button class="explore">Explore</button></a>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="About">
+    <div style="display: grid; width: 100%; height: 100vh; grid-template-columns: 30% 70%;">
+      <div  style="height: 100vh;" id="Skills">
+        <h1 class="TBEN" style="margin-left: 30%;">Skills</h1>
+        <ul class="skillList">
+          <li><img src="./Resources/images/icons/html.png" alt="" class="skillImg">html</li>
+          <li><img src="./Resources/images/icons/java-script.png" alt="" class="skillImg">Javascript</li>
+          <li><img src="./Resources/images/icons/node-js.png" alt="" class="skillImg">node-js</li>
+          <li><img src="./Resources/images/icons/php.png" alt="" class="skillImg">php</li>
+          <li><img src="./Resources/images/icons/c-logo.png" alt="" class="skillImg">C++</li>
+          <li><img src="./Resources/images/icons/java.png" alt="" class="skillImg">Java</li>
+          <li><img src="./Resources/images/icons/sql-server.png" alt="" class="skillImg">my-SQL</li>
+        </ul>
+
+      </div>
+      <div class="left abt" style="height: 100%;" id="About">
+        <h1 class="TBEN">About Me</h1>
+        <p>Hi, I'm Tebarek Shemsu, a dedicated web developer with
+          expertise in creating dynamic, responsive web
+          applications. Leveraging my strong problem-solving skills
+          and attention to detail, I strive to deliver customized
+          solutions that exceed expectations and ensure user
+          satisfaction. Let's collaborate to achieve your digital
+          aspirations!</p>
+        <a href="./Tebarek Shemsu CV.pdf" download=""><button class="explore res">Download Resume</button></a>
+
+      </div>
+    </div>
+  </div>
+  <div style="display: grid; width: 100%; height: 90vh; grid-template-columns: 30% 70%;">
+    <div class="cnt" style="height: 100%" ; id="Contact">
+
+      <div>
+        <h1 class="TBEN">Contact_me</h1>
+        <div class="contact">
+          <a href="https://t.me/TebarekTS"><img src="./Resources/images/icons/telegram.png" alt="telegram" class="contactImg">@TebarekTS</a>
+          <a href="https://www.linkedin.com/in/tebarek-shemsu/"><img src="./Resources/images/icons/linkedin (1).png" alt="linkedin"
+              class="contactImg">Tebarek-Shemsu</a>
+          <a href="https://github.com/tebaarekshemsu"><img src="./Resources/images/icons/github.png" alt="github"
+              class="contactImg">tebaarekshemsu</a>
+          <a href="mailto:tebarek29@gmail.com"><img src="./Resources/images/icons/email.png" alt="email"
+              class="contactImg">tebarek29@gmail.com</a>
+        </div>
+      </div>
+      <div>
+        <h2>Write to me</h2>
+        <form action="https://formspree.io/trbarek29@gmail.com" method="post" class="msgForm">
+          <label for="name">Name:</label><br>
+          <input type="text" id="name" name="name" required><br>
+          <label for="email">Email:</label><br>
+          <input type="email" id="email" name="email" required><br>
+          <label for="message">Message:</label><br>
+          <textarea name="message" id="message" rows="5"></textarea><br>
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+    </div>
+    <div class="right" style="height: 100%;" id="Project">
+      <div class="ProjectPage">
+        <div class="proj">
+          <h1 class="TBEN ">List Of projects</h1>
+        </div>
+        <div class="slider">
+          <div class="slide">
+            <img src="./Resources/images/ProjectImgs/pro1.1.png" alt="" width="100%" height="50%">
+            <p class="descri">
+              Book Store website made using Html , CSS and Javascript.
+            </p>
+            <button class="explore pjex">See More</button>
+          </div>
+          <div class="slide">
+            <img src="./Resources/images/ProjectImgs/pro2.png" alt="" width="100%" height="50%">
+            <p class="descri">A portfolio website made usind html , CSS and java-script</p>
+            <button class="explore pjex">See More</button>
+          </div>
+          <div class="slide">
+
+            <img src="./Resources/images/ProjectImgs/pro1.png" alt="" width="100%" height="50%">
+            <p class="descri"> repudiandae nostrum esse quibusdam aspernatur accusantium ullam minus ipsa incidunt!
+            </p>
+            <button class="explore pjex">See More</button>
+          </div>
+          <button class="slider__btn slider__btn--left">&larr;</button>
+          <button class="slider__btn slider__btn--right">&rarr;</button>
+          <div class="dots"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="overlay"></div>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
