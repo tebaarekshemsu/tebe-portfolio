@@ -197,7 +197,7 @@ body {
 .mobile-nav-link {
   font-size: 1.25rem;
   font-weight: 500;
-  color: var(--muted-foreground);
+  color: var(--card-foreground);
   background: none;
   border: none;
   padding: 0.5rem 1.5rem;
