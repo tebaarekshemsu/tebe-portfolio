@@ -1,175 +1,569 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>my profile</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tebarek Shemsu - Portfolio</title>
+  <link rel="icon" type="image/png" href="./Resources/images/MyPhoto/logo.png">
   <link rel="stylesheet" href="./CSS/style.css">
-  <style>
-
-  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-
 <body>
-  <div class="HomePage" id="HomePage">
-    <div class="menu">
-      <a href="#HomePage"><button>Home</button></a>
-      <a href="#About"><button>About</button></a>
-      <a href="#Skills"><button>Skills</button></a>
-      <a href="#Project"><button>Projects</button></a>
-      <a href="#Contact"><button>Contact</button></a>
-      <a href="./Resources/Tebarek Shemsu CV.pdf" download=""><button>Resume</button></a>
-    </div>
-
-    <div class="menubar menuIcon">
-      <button></button><button></button><button></button>
-    </div>
-    <div class="SideBar">
-      <button class="closeBtn"> <img src="./icons/close.png" alt="" class="closeIcon"></button>
-      <ul>
-        <a href="#HomePage">
-          <li class="links">Home</li>
-        </a>
-        <a href="#About">
-          <li class="links">About</li>
-        </a>
-        <a href="#Skills">
-          <li class="links">Skills</li>
-        </a>
-        <a href="#Project">
-          <li class="links">Project</li>
-        </a>
-        <a href="#Contact">
-          <li class="links">Contact</li>
-        </a>
-        <a href="./Tebarek Shemsu CV.pdf" download="">
-          <li class="links">Resume</li>
-        </a>
-      </ul>
-
-    </div>
-    <div style="display: grid; width: 100%; height: 100vh; grid-template-columns: 30% 70%;">
-      <div>
-        <div class="left">
-          <div class="name TBEN">
-            <p>Tebarek</p>
-            <p>Shemsu</p>
-          </div>
-          <div class="photoHolder">
-            <img src="./Resources/images/MyPhoto/photo_2023-12-15_22-44-04.jpg" alt="My Photo" class="photo">
-          </div>
-
+  <!-- Fixed Header -->
+  <header class="header">
+    <div class="container header-container">
+      <div class="logo-container">
+        <div class="logo">
+          <img src="./Resources/images/MyPhoto/logo.png" alt="Logo" style="background: transparent;">
         </div>
+        <h1 class="name">Tebarek Shemsu</h1>
       </div>
-      <div>
-        <div class="right">
-          <h2>Software Engineer</h2>
-          <h3>FullStack Developer</h3>
-          <p>Software Engineering student at
+      
+      <div class="nav-container">
+        <nav class="desktop-nav">
+          <button class="nav-link" data-section="home">Home</button>
+          <button class="nav-link" data-section="skills">Skills</button>
+          <button class="nav-link" data-section="projects">Projects</button>
+          <button class="nav-link" data-section="resume">Resume</button>
+          <button class="nav-link" data-section="contact">Contact</button>
+        </nav>
+        
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+          <i class="fas fa-moon"></i>
+        </button>
+        
+        <button id="mobile-menu-btn" class="mobile-menu-btn">
+          Menu
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="mobile-menu">
+    <nav class="mobile-nav">
+      <button class="mobile-nav-link" data-section="home">Home</button>
+      <button class="mobile-nav-link" data-section="skills">Skills</button>
+      <button class="mobile-nav-link" data-section="projects">Projects</button>
+      <button class="mobile-nav-link" data-section="resume">Resume</button>
+      <button class="mobile-nav-link" data-section="contact">Contact</button>
+    </nav>
+  </div>
+
+  <!-- Main Content -->
+  <main class="container main-content">
+    <!-- Home Section -->
+    <section id="home" class="section">
+      <div class="home-grid">
+        <div class="home-content">
+          <h1 class="home-title">Hi, I'm <span>Tebarek Shemsu</span></h1>
+          <h2 class="home-subtitle">Full Stack Developer</h2>
+          <p class="home-description">
+            I'm a passionate Full Stack Developer with experience in building web applications using modern technologies.
+            I specialize in JavaScript, React, Node.js, and Next.js, creating responsive and user-friendly interfaces.
           </p>
-          <p>Addis Ababa Science
-            and Technology University</p>
-          <a href="#About"><button class="explore">Explore</button></a>
-
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="About">
-    <div style="display: grid; width: 100%; height: 100vh; grid-template-columns: 30% 70%;">
-      <div style="height: 100vh;" id="Skills">
-        <h1 class="TBEN" style="margin-left: 30%;">Skills</h1>
-        <ul class="skillList">
-          <li><img src="./Resources/images/icons/html.png" alt="" class="skillImg">html</li>
-          <li><img src="./Resources/images/icons/java-script.png" alt="" class="skillImg">Javascript</li>
-          <li><img src="./Resources/images/icons/node-js.png" alt="" class="skillImg">node-js</li>
-          <li><img src="./Resources/images/icons/php.png" alt="" class="skillImg">php</li>
-          <li><img src="./Resources/images/icons/c-logo.png" alt="" class="skillImg">C++</li>
-          <li><img src="./Resources/images/icons/java.png" alt="" class="skillImg">Java</li>
-          <li><img src="./Resources/images/icons/sql-server.png" alt="" class="skillImg">my-SQL</li>
-        </ul>
-
-      </div>
-      <div class="left abt" style="height: 100%;" id="About">
-        <h1 class="TBEN">About Me</h1>
-        <p>Hi, I'm Tebarek Shemsu, a dedicated web developer with
-          expertise in creating dynamic, responsive web
-          applications. Leveraging my strong problem-solving skills
-          and attention to detail, I strive to deliver customized
-          solutions that exceed expectations and ensure user
-          satisfaction. Let's collaborate to achieve your digital
-          aspirations!</p>
-        <a href="./Tebarek Shemsu CV.pdf" download=""><button class="explore res">Download Resume</button></a>
-
-      </div>
-    </div>
-  </div>
-  <div style="display: grid; width: 100%; height: 90vh; grid-template-columns: 30% 70%;">
-    <div class="cnt" style="height: 100%" ; id="Contact">
-
-      <div>
-        <h1 class="TBEN">Contact_me</h1>
-        <div class="contact">
-          <a href="https://t.me/TebarekTS"><img src="./Resources/images/icons/telegram.png" alt="telegram"
-              class="contactImg">@TebarekTS</a>
-          <a href="https://www.linkedin.com/in/tebarek-shemsu/"><img src="./Resources/images/icons/linkedin (1).png"
-              alt="linkedin" class="contactImg">Tebarek-Shemsu</a>
-          <a href="https://github.com/tebaarekshemsu"><img src="./Resources/images/icons/github.png" alt="github"
-              class="contactImg">tebaarekshemsu</a>
-          <a href="mailto:tebarek29@gmail.com"><img src="./Resources/images/icons/email.png" alt="email"
-              class="contactImg">tebarek29@gmail.com</a>
-        </div>
-      </div>
-      <div>
-        <h2>Write to me</h2>
-        <form action="https://formspree.io/trbarek29@gmail.com" method="post" class="msgForm">
-          <label for="name">Name:</label><br>
-          <input type="text" id="name" name="name" required><br>
-          <label for="email">Email:</label><br>
-          <input type="email" id="email" name="email" required><br>
-          <label for="message">Message:</label><br>
-          <textarea name="message" id="message" rows="5"></textarea><br>
-          <input type="submit" value="Submit">
-        </form>
-      </div>
-    </div>
-    <div class="right" style="height: 100%;" id="Project">
-      <div class="ProjectPage">
-        <div class="proj">
-          <h1 class="TBEN ">List Of projects</h1>
-        </div>
-        <div class="slider">
-          <div class="slide">
-            <img src="./Resources/images/ProjectImgs/pro2.png" alt="" width="100%" height="50%">
-            <p class="descri">A portfolio website made usind html , CSS and java-script</p>
-            <button class="explore pjex">See More</button>
+          
+          <div class="home-buttons">
+            <button class="btn primary-btn" onclick="scrollToSection('projects')">
+              View Projects <i class="fas fa-arrow-right"></i>
+            </button>
+            <button class="btn outline-btn" onclick="scrollToSection('resume')">
+              View Resume
+            </button>
           </div>
-          <div class="slide">
-            <img src="./Resources/images/ProjectImgs/pro1.1.png" alt="" width="100%" height="50%">
-            <p class="descri">
-              Book Store website made using Html , CSS and Javascript.
-            </p>
-            <button class="explore pjex">See More</button>
+          
+          <div class="social-links">
+            <a href="https://github.com/tebaarekshemsu" target="_blank" rel="noopener noreferrer" class="social-link">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://linkedin.com/in/tebarek" target="_blank" rel="noopener noreferrer" class="social-link">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="mailto:tebarek29@gmail.com" class="social-link">
+              <i class="fas fa-envelope"></i>
+            </a>
+            <a href="tel:+251929088050" class="social-link">
+              <i class="fas fa-phone"></i>
+            </a>
           </div>
-
-          <div class="slide">
-
-            <img src="./Resources/images/ProjectImgs/pro1.png" alt="" width="100%" height="50%">
-            <p class="descri"> repudiandae nostrum esse quibusdam aspernatur accusantium ullam minus ipsa incidunt!
-            </p>
-            <button class="explore pjex">See More</button>
+        </div>
+        
+        <div class="profile-image-container">
+          <div class="profile-image">
+            <img src="./Resources/images/IMG_0302.JPG" alt="Tebarek Shemsu" style="max-width: 100%; height: auto; object-fit: cover;">
           </div>
-          <button class="slider__btn slider__btn--left">&larr;</button>
-          <button class="slider__btn slider__btn--right">&rarr;</button>
-          <div class="dots"></div>
         </div>
       </div>
-    </div>
-  </div>
-  <div class="overlay"></div>
+    </section>
 
-  <script src="js/script.js"></script>
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+      <div class="section-header">
+        <h2 class="section-title">Technical Skills</h2>
+        <p class="section-description">
+          Here's an overview of my technical skills and expertise in various technologies.
+        </p>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-header">
+            <div class="skill-icon"><i class="fas fa-code"></i></div>
+            <h3 class="skill-title">Languages</h3>
+          </div>
+          <p class="skill-description">Programming languages I'm proficient in</p>
+          <div class="skill-tags">
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">HTML/CSS</span>
+            <span class="skill-tag">SQL</span>
+            <span class="skill-tag">PHP</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-header">
+            <div class="skill-icon"><i class="fas fa-layer-group"></i></div>
+            <h3 class="skill-title">Frameworks</h3>
+          </div>
+          <p class="skill-description">Frameworks and libraries I work with</p>
+          <div class="skill-tags">
+            <span class="skill-tag">React</span>
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">Next.js</span>
+            <span class="skill-tag">FastAPI</span>
+            <span class="skill-tag">Django</span>
+            <span class="skill-tag">TailwindCSS</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-header">
+            <div class="skill-icon"><i class="fas fa-database"></i></div>
+            <h3 class="skill-title">Databases</h3>
+          </div>
+          <p class="skill-description">Database systems I'm experienced with</p>
+          <div class="skill-tags">
+            <span class="skill-tag">PostgreSQL</span>
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">MongoDB</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-header">
+            <div class="skill-icon"><i class="fas fa-wrench"></i></div>
+            <h3 class="skill-title">Developer Tools</h3>
+          </div>
+          <p class="skill-description">Tools I use for development</p>
+          <div class="skill-tags">
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">Docker</span>
+            <span class="skill-tag">VS Code</span>
+            <span class="skill-tag">Visual Studio</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-header">
+            <div class="skill-icon"><i class="fas fa-server"></i></div>
+            <h3 class="skill-title">Libraries</h3>
+          </div>
+          <p class="skill-description">Libraries I'm familiar with</p>
+          <div class="skill-tags">
+            <span class="skill-tag">pandas</span>
+            <span class="skill-tag">NumPy</span>
+            <span class="skill-tag">Matplotlib</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+      <div class="section-header">
+        <h2 class="section-title">My Projects</h2>
+        <p class="section-description">
+          Here are some of the projects I've worked on. Each project represents different skills and challenges I've tackled.
+        </p>
+      </div>
+
+      <div class="project-categories">
+        <!-- <button class="category-btn active" data-category="All">All</button>
+        <button class="category-btn" data-category="Frontend">Frontend</button>
+        <button class="category-btn" data-category="Backend">Backend</button>
+        <button class="category-btn" data-category="Full Stack">Full Stack</button> -->
+      </div>
+
+      <div class="projects-grid">
+        <div class="project-card" data-categories="Full Stack,Frontend,Backend">
+          <div class="project-header">
+            <h3 class="project-title">NafDigital - Hotel Reservation System</h3>
+            <p class="project-description">A full-stack web application for hotel reservations with admin and super admin controls. Integrated with Chapa payment system.</p>
+          </div>
+          <div class="project-content">
+            <div class="project-tech-tags">
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">MySQL</span>
+            </div>
+            <div class="project-category-tags">
+              <span class="category-tag">Full Stack</span>
+              <span class="category-tag">Frontend</span>
+              <span class="category-tag">Backend</span>
+            </div>
+          </div>
+          <div class="project-footer">
+            <a href="https://github.com/tebaarekshemsu/Hotel-Reservation-FrontEnd.git" target="_blank" rel="noopener noreferrer" class="project-btn outline-btn">
+              <i class="fab fa-github"></i> Code
+            </a>
+            <a href="https://nafdigital.et/" target="_blank" rel="noopener noreferrer" class="project-btn primary-btn">
+              <i class="fas fa-external-link-alt"></i> Live Demo
+            </a>
+          </div>
+        </div>
+
+        <div class="project-card" data-categories="Full Stack,Frontend,Backend">
+          <div class="project-header">
+            <h3 class="project-title">Farm Monitoring System</h3>
+            <p class="project-description">A farm monitoring system that reads and displays sensor data with real-time updates using websockets and graphical data analysis.</p>
+          </div>
+          <div class="project-content">
+            <div class="project-tech-tags">
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">PostgreSQL</span>
+            </div>
+            <div class="project-category-tags">
+              <span class="category-tag">Full Stack</span>
+              <span class="category-tag">Frontend</span>
+              <span class="category-tag">Backend</span>
+            </div>
+          </div>
+          <div class="project-footer">
+            <a href="https://github.com/tebaarekshemsu/farm-monitoring-backend.git" target="_blank" rel="noopener noreferrer" class="project-btn outline-btn">
+              <i class="fab fa-github"></i> Code
+            </a>
+            <a href="https://farm-monitoring-system.netlify.app/login" target="_blank" rel="noopener noreferrer" class="project-btn primary-btn">
+              <i class="fas fa-external-link-alt"></i> Live Demo
+            </a>
+          </div>
+        </div>
+
+        <div class="project-card" data-categories="Full Stack,Frontend,Backend">
+          <div class="project-header">
+            <h3 class="project-title">Property Management System</h3>
+            <p class="project-description">A property management system with a REST API built using FastAPI and a Next.js frontend for managing properties.</p>
+          </div>
+          <div class="project-content">
+            <div class="project-tech-tags">
+              <span class="tech-tag">Next.js</span>
+              <span class="tech-tag">FastAPI</span>
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">SQL</span>
+            </div>
+            <div class="project-category-tags">
+              <span class="category-tag">Full Stack</span>
+              <span class="category-tag">Frontend</span>
+              <span class="category-tag">Backend</span>
+            </div>
+          </div>
+          <div class="project-footer">
+            <a href="https://github.com/tebaarekshemsu/i-property-management-frontend.git" target="_blank" rel="noopener noreferrer" class="project-btn outline-btn">
+              <i class="fab fa-github"></i> Code
+            </a>
+            <!-- <a href="https://example.com" target="_blank" rel="noopener noreferrer" class="project-btn primary-btn">
+              <i class="fas fa-external-link-alt"></i> Live Demo
+            </a> -->
+          </div>
+        </div>
+      </div>
+
+      <div class="pagination" id="pagination">
+        <!-- Pagination will be added by JavaScript if needed -->
+      </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="section">
+      <div class="resume-header">
+        <div>
+          <h2 class="section-title">My Resume</h2>
+          <p class="section-description">
+            A summary of my professional experience, education, and skills.
+          </p>
+        </div>
+        <button class="btn primary-btn">
+        <a href="./Resources/Tebarek_s_Resume (1).pdf" download>
+            <i class="fas fa-download"></i> Download Resume
+        </a>
+        </button>
+      </div>
+
+      <!-- Work Experience -->
+      <div class="resume-section">
+        <div class="resume-section-header">
+          <i class="fas fa-briefcase"></i>
+          <h3 class="resume-section-title">Work Experience</h3>
+        </div>
+        
+        <div class="resume-items">
+          <div class="resume-card">
+            <div class="resume-card-header">
+              <div>
+                <h4 class="resume-card-title">Full Stack Developer</h4>
+                <p class="resume-card-subtitle">Naf Digital - Addis Ababa</p>
+              </div>
+              <span class="resume-period">2024 - 2025</span>
+            </div>
+            <div class="resume-card-content">
+              <p class="resume-description">Developed a REST API using NodeJS and MySQL database for hotel reservation and React app frontend.</p>
+              <div class="resume-responsibilities">
+                <h5>Key Responsibilities:</h5>
+                <ul>
+                  <li>Developed a full-stack web application with Node.js serving a REST API</li>
+                  <li>Created React frontend for hotel reservation system</li>
+                  <li>Implemented admin and super admin controls</li>
+                  <li>Integrated Chapa payment system</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="resume-card">
+            <div class="resume-card-header">
+              <div>
+                <h4 class="resume-card-title">Full Stack Developer</h4>
+                <p class="resume-card-subtitle">I Property Management - Addis Ababa</p>
+              </div>
+              <span class="resume-period">2025 - presen</span>
+            </div>
+            <div class="resume-card-content">
+              <p class="resume-description">Communicated with users to gather requirements, developed a REST API using FastAPI, and created a NextJS frontend website.</p>
+              <div class="resume-responsibilities">
+                <h5>Key Responsibilities:</h5>
+                <ul>
+                  <li>Gathered and analyzed user requirements</li>
+                  <li>Developed REST API using FastAPI</li>
+                  <li>Created responsive frontend with Next.js</li>
+                  <li>Implemented database design and management</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Education -->
+      <div class="resume-section">
+        <div class="resume-section-header">
+          <i class="fas fa-graduation-cap"></i>
+          <h3 class="resume-section-title">Education</h3>
+        </div>
+        
+        <div class="resume-items">
+          <div class="resume-card">
+            <div class="resume-card-header">
+              <div>
+                <h4 class="resume-card-title">Bachelor of Software Engineering</h4>
+                <p class="resume-card-subtitle">Addis Ababa Science And Technology University, Addis Ababa, Ethiopia</p>
+              </div>
+              <span class="resume-period">2018 - presen</span>
+            </div>
+          </div>
+
+          <div class="resume-card">
+            <div class="resume-card-header">
+              <div>
+                <h4 class="resume-card-title">Bachelor of Management</h4>
+                <p class="resume-card-subtitle">Unity University, Addis Ababa, Ethiopia</p>
+              </div>
+              <span class="resume-period">2016 - 2020</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projects -->
+      <div class="resume-section">
+        <div class="resume-section-header">
+          <i class="fas fa-briefcase"></i>
+          <h3 class="resume-section-title">Projects</h3>
+        </div>
+        
+        <div class="resume-items">
+          <div class="resume-card">
+            <div class="resume-card-header">
+              <h4 class="resume-card-title">NafDigital</h4>
+              <span class="tech-badge">JavaScript, Node.js, React, MySQL</span>
+            </div>
+            <div class="resume-card-content">
+              <p class="resume-description">Developed a full-stack web application for hotel reservation with admin controls and Chapa payment integration.</p>
+            </div>
+          </div>
+
+          <div class="resume-card">
+            <div class="resume-card-header">
+              <h4 class="resume-card-title">Farm Monitoring</h4>
+              <span class="tech-badge">JavaScript, Node.js, React, PostgreSQL, Git</span>
+            </div>
+            <div class="resume-card-content">
+              <p class="resume-description">Developed a farm monitoring system to read and display sensor data with graphs for analysis and real-time updates using websocket.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Technical Skills -->
+      <div class="resume-section">
+        <div class="resume-section-header">
+          <i class="fas fa-briefcase"></i>
+          <h3 class="resume-section-title">Technical Skills</h3>
+        </div>
+        
+        <div class="resume-card">
+          <div class="resume-card-content">
+            <div class="skills-grid-resume">
+              <div>
+                <h4 class="skills-category">Languages</h4>
+                <div class="skills-tags">
+                  <span class="skill-badge">Java</span>
+                  <span class="skill-badge">Python</span>
+                  <span class="skill-badge">SQL (Postgres, MySQL)</span>
+                  <span class="skill-badge">JavaScript</span>
+                  <span class="skill-badge">HTML/CSS</span>
+                  <span class="skill-badge">PHP</span>
+                </div>
+              </div>
+              
+              <div>
+                <h4 class="skills-category">Frameworks</h4>
+                <div class="skills-tags">
+                  <span class="skill-badge">React</span>
+                  <span class="skill-badge">Node.js</span>
+                  <span class="skill-badge">TailwindCSS</span>
+                  <span class="skill-badge">Next.js</span>
+                  <span class="skill-badge">FastAPI</span>
+                  <span class="skill-badge">Django</span>
+                </div>
+              </div>
+              
+              <div>
+                <h4 class="skills-category">Developer Tools</h4>
+                <div class="skills-tags">
+                  <span class="skill-badge">Git</span>
+                  <span class="skill-badge">Docker</span>
+                  <span class="skill-badge">VS Code</span>
+                  <span class="skill-badge">Visual Studio</span>
+                </div>
+              </div>
+              
+              <div>
+                <h4 class="skills-category">Libraries</h4>
+                <div class="skills-tags">
+                  <span class="skill-badge">pandas</span>
+                  <span class="skill-badge">NumPy</span>
+                  <span class="skill-badge">Matplotlib</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h2 class="section-title">Get In Touch</h2>
+          <p class="section-description">
+            I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
+          </p>
+          
+          <div class="contact-methods">
+            <div class="contact-method">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="contact-details">
+                <h3>Email</h3>
+                <p>tebarek29@gmail.com</p>
+              </div>
+            </div>
+            
+            <div class="contact-method">
+              <div class="contact-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div class="contact-details">
+                <h3>Phone</h3>
+                <p>+251-929-088-050</p>
+              </div>
+            </div>
+            
+            <div class="contact-method">
+              <div class="contact-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="contact-details">
+                <h3>Location</h3>
+                <p>Addis Ababa, Ethiopia</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-container">
+          <div class="contact-form-card">
+            <div class="contact-form-header">
+              <h3>Send Me a Message</h3>
+              <p>Fill out the form below and I'll get back to you as soon as possible.</p>
+            </div>
+            <form id="contact-form" class="contact-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name">Name</label>
+                  <input type="text" id="name" name="name" placeholder="Your name" required>
+                </div>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" placeholder="Your email" required>
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" placeholder="Subject" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Your message" rows="5" required></textarea>
+              </div>
+              
+              <button type="submit" class="btn primary-btn submit-btn">
+                <i class="fas fa-paper-plane"></i> Send Message
+              </button>
+              
+              <div id="form-status" class="form-status"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="current-year"></span> Tebarek Shemsu. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="./js/script.js"></script>
 </body>
-
 </html>
