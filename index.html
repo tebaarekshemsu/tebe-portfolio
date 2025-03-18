@@ -523,34 +523,49 @@
               <h3>Send Me a Message</h3>
               <p>Fill out the form below and I'll get back to you as soon as possible.</p>
             </div>
-            <form id="contact-form" class="contact-form">
-              <div class="form-row">
-                <div class="form-group">
-                  <label for="name">Name</label>
-                  <input type="text" id="name" name="name" placeholder="Your name" required>
-                </div>
-                <div class="form-group">
-                  <label for="email">Email</label>
-                  <input type="email" id="email" name="email" placeholder="Your email" required>
-                </div>
-              </div>
-              
+            <form id="contactForm" action="https://formspree.io/f/mayrgygp" method="POST" class="contact-form">
+              <span id="successMessage" style="display: none; color: green;">Message sent successfully!</span>
               <div class="form-group">
-                <label for="subject">Subject</label>
-                <input type="text" id="subject" name="subject" placeholder="Subject" required>
+              <label for="name">Name:</label><br>
+              <input type="text" id="name" name="name" required placeholder="Your name"><br>
               </div>
-              
               <div class="form-group">
-                <label for="message">Message</label>
-                <textarea id="message" name="message" placeholder="Your message" rows="5" required></textarea>
-              </div>
-              
+              <label for="email">Email:</label><br>
+              <input type="email" id="email" name="email" required placeholder="Your email"></div>
+              <div class="form-group">
+              <label for="message">Message:</label><br>
+              <textarea name="message" id="message" rows="5" required></textarea></div>
               <button type="submit" class="btn primary-btn submit-btn">
                 <i class="fas fa-paper-plane"></i> Send Message
               </button>
-              
               <div id="form-status" class="form-status"></div>
             </form>
+            <script>
+            document.getElementById('contactForm').addEventListener('submit', function(event) {
+              event.preventDefault();
+              const formData = new FormData(this);
+              fetch(this.action, {
+                method: this.method,
+                body: formData,
+                headers: { 'Accept': 'application/json' }
+              })
+              .then(response => {
+                if (response.ok) {
+                  const successMessage = document.getElementById('successMessage');
+                  successMessage.style.display = 'inline';
+                  this.reset();
+                  setTimeout(() => {
+                    successMessage.style.display = 'none';
+                  }, 3000);
+                } else {
+                  alert('There was a problem submitting the form.');
+                }
+              })
+              .catch(() => {
+                alert('There was a problem submitting the form.');
+              });
+            });
+            </script>
           </div>
         </div>
       </div>
